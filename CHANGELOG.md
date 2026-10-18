@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0a1
+## 1.0.0
 
 - Add optional Open Babel MMFF94s, MMFF94, UFF, GAFF and Ghemical optimizers
   through MoleditPy 5's public plugin API.

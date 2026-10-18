@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "moleditpy-openbabel-optimizer"
-version = "1.0.0a1"
+version = "1.0.0"
 description = "Optional, isolated Open Babel force-field optimization for MoleditPy 5"
 readme = "README.md"
 requires-python = ">=3.10,<3.15"

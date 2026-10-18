@@ -4,7 +4,7 @@ from functools import partial
 from typing import Any
 
 PLUGIN_NAME = "Open Babel Optimizer"
-PLUGIN_VERSION = "1.0.0a1"
+PLUGIN_VERSION = "1.0.0"
 PLUGIN_AUTHOR = "HiroYokoyama"
 PLUGIN_DESCRIPTION = (
     "Optional MMFF94s, MMFF94, UFF, GAFF and Ghemical optimization in an isolated "
