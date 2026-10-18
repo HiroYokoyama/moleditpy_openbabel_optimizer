@@ -165,6 +165,24 @@ def test_real_failed_child(engine_python):
         )
 
 
+def test_external_engine_from_frozen_editor(engine_python, monkeypatch, tmp_path):
+    # The frozen executable is not Python. Only the selected external engine
+    # may be spawned; this also exercises Windows' DLL-directory restoration.
+    monkeypatch.setattr(sys, "frozen", True, raising=False)
+    monkeypatch.setattr(sys, "_MEIPASS", str(tmp_path), raising=False)
+    monkeypatch.setattr(sys, "executable", str(tmp_path / "MoleditPy"))
+    molecule = ethanol()
+    coordinates = runtime.optimize(
+        Chem.MolToMolBlock(molecule),
+        9,
+        "UFF",
+        max_iterations=5,
+        executable=engine_python,
+    )
+    assert len(coordinates) == 9
+    assert "openbabel._openbabel" not in sys.modules
+
+
 def test_worker_rejects_invalid_iteration_budget(engine_python):
     worker = Path(runtime.__file__).with_name("_worker.py")
     result = subprocess.run(
