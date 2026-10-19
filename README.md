@@ -1,5 +1,10 @@
 # Open Babel Optimizer for MoleditPy
 
+[![CI](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/actions/workflows/test.yml/badge.svg)](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/actions/workflows/test.yml)
+[![GitHub tag](https://img.shields.io/github/v/tag/HiroYokoyama/moleditpy_openbabel_optimizer?label=version)](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/tags)
+[![GitHub Downloads](https://img.shields.io/github/downloads/HiroYokoyama/moleditpy_openbabel_optimizer/total)](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/releases)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 An optional **MoleditPy 5 / PySide6** plugin for MMFF94s, MMFF94, UFF, GAFF and
 Ghemical geometry optimization. It optimizes an existing 3D structure; ordinary
 conversion and Direct mode belong to the editor and do not need this plugin.
@@ -52,20 +57,3 @@ python -m build
 For plugin-manager distribution, zip `openbabel_optimizer/` together with the
 license and this README. Keep the package folder at the top level of the archive.
 
-## 日本語
-
-MoleditPy 5用の任意プラグインです。既存の3D構造に対し、MMFF94s・MMFF94・UFF・GAFF・
-Ghemicalによる最適化を追加します。通常の3D変換とDirectモードにこのプラグインは不要です。
-
-Open Babelは別のPythonプロセス内だけで読み込みます。キャンセル時は子プロセスを終了し、
-エラー時は元の座標を維持します。原子の追加・削除は行いません。
-
-Python 3.10〜3.14の環境に上記のコマンドで公式Open Babelをインストールし、
-`openbabel_optimizer`フォルダーをMoleditPyのプラグインフォルダーにコピーしてください。
-設定は「Settings → Open Babel Optimizer」にあります。
-
-単体配布のWindows/macOS版では、Open Babelを導入した別のPython実行ファイルを指定します。
-本体の実行ファイルをPythonとして指定することはできません。本体のバイナリにOpen Babelは
-同梱しません。既存の`openbabel-wheel`とは同じ名前空間を使うため、先に削除してください。
-
-このプラグインはGPL v3以降です。本体や、ほかのプラグインのライセンスは変更しません。
