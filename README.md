@@ -20,7 +20,6 @@ python -m pip install "openbabel>=3.2.1,<3.3"
 Copy the `openbabel_optimizer/` directory into `~/.moleditpy/plugins/`
 (`%USERPROFILE%\.moleditpy\plugins\` on Windows), then restart MoleditPy.
 Alternatively install the packaged plugin ZIP with the editor's Plugin Manager.
-The package is not yet published to PyPI or the plugin registry.
 
 The five methods appear in the **Optimize 3D** menu. Configuration is under
 **Settings → Open Babel Optimizer**. Set the maximum iteration count and, if
