@@ -25,6 +25,9 @@ testpaths = ["tests"]
 qt_api = "pyside6"
 
 [tool.ruff]
+# Common tool copies are validated and formatted only in their canonical repositories.
+extend-exclude = ["scripts/release_common.py"]
+
 target-version = "py310"
 
 [tool.ruff.lint]
