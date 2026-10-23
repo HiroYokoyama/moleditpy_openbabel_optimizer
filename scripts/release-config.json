@@ -1,0 +1,17 @@
+{
+  "source": "openbabel_optimizer/__init__.py",
+  "title": "Open Babel Optimizer",
+  "package": "openbabel_optimizer",
+  "archive": "openbabel_optimizer_{version}.zip",
+  "assets": [
+    "openbabel_optimizer_{version}.zip"
+  ],
+  "include": [
+    "README.md",
+    "LICENSE"
+  ],
+  "exclude": [
+    "*/__pycache__/*",
+    "*/.git/*"
+  ]
+}
