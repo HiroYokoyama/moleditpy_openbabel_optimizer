@@ -1,10 +1,11 @@
-"""Optional Open Babel force fields for MoleditPy, GPL-3.0-or-later."""
+"""Optional Open Babel force fields for MoleditPy, GPL-2.0-or-later."""
 
 from functools import partial
 from typing import Any
 
 PLUGIN_NAME = "Open Babel Optimizer"
-PLUGIN_VERSION = "1.0.0"
+PLUGIN_VERSION = "1.0.1"
+PLUGIN_LICENSE = "GPL-2.0-or-later"
 PLUGIN_AUTHOR = "HiroYokoyama"
 PLUGIN_DESCRIPTION = (
     "Optional MMFF94s, MMFF94, UFF, GAFF and Ghemical optimization in an isolated "

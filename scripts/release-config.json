@@ -8,7 +8,8 @@
   ],
   "include": [
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "LICENSING.md"
   ],
   "exclude": [
     "*/__pycache__/*",

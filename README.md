@@ -3,7 +3,7 @@
 [![CI](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/actions/workflows/test.yml/badge.svg)](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/actions/workflows/test.yml)
 [![GitHub tag](https://img.shields.io/github/v/tag/HiroYokoyama/moleditpy_openbabel_optimizer?label=version)](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/tags)
 [![GitHub Downloads](https://img.shields.io/github/downloads/HiroYokoyama/moleditpy_openbabel_optimizer/total)](https://github.com/HiroYokoyama/moleditpy_openbabel_optimizer/releases)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v2 or later](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](LICENSE)
 
 An optional **MoleditPy 5 / PySide6** plugin for MMFF94s, MMFF94, UFF, GAFF and
 Ghemical geometry optimization. It optimizes an existing 3D structure; ordinary
@@ -41,19 +41,19 @@ official `openbabel`; those distributions share the same import namespace.
 
 ## License
 
-This optional plugin is **GPL-3.0-or-later**, independently of the main editor's
-LGPL license. Open Babel has its own GPL terms. This does not change the licenses
-of unrelated plugins. The main editor does not depend on or distribute this plugin
-as part of its core package.
+The first-party plugin runtime is **GPL-2.0-or-later** starting with 1.0.1.
+The standalone Open Babel worker can be conveyed under GPLv2; the GUI can use
+GPLv3 with PySide6. Open Babel retains its own GPL-2.0-only terms.
+See [LICENSING.md](LICENSING.md) for scope, process boundaries and distribution
+requirements. Earlier releases keep their original grants.
 
 ## Development
 
 ```sh
 python -m pip install -e ".[engine,test]"
 QT_QPA_PLATFORM=offscreen PYTEST_QT_API=pyside6 python -m pytest
-python -m build
 ```
 
 For plugin-manager distribution, zip `openbabel_optimizer/` together with the
-license and this README. Keep the package folder at the top level of the archive.
+LICENSE, LICENSING.md and this README. Keep the package folder at the top level of the archive.
 
